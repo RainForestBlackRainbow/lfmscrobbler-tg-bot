@@ -17,5 +17,5 @@ bluebird.promisifyAll(lfm.user);
 bluebird.promisifyAll(redisAPI.RedisClient.prototype);
 
 new TelegramBot(function() {
-  console.log('Starting Last.fm Telegram Bot...');
+  console.log('Starting Last.fm Scrobbler Bot...');
 }, lfm, config, TelegramBotAPI, new UserAPI(redisAPI));
